@@ -1,3 +1,3 @@
 # LolasWeb
 
-https://linyers.github.io/LolasWeb/
+https://linyers.github.io/LolasWeb/home
