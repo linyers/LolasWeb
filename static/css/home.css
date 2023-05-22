@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url(https://i.pinimg.com/564x/f6/32/b4/f632b42b01077ef440b455c9e1431c12.jpg);
+}
+
+.header {
+    background-color: #222121;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 45px;
+    width: 100%;
+    position: sticky;
+    padding: 0.25rem;
+    margin-bottom: 1rem;
+    z-index: 40;
+    top: 0;
+}
+
+.header .logo{
+    cursor: pointer;
+}
+
+.header .logo img{
+    margin: 10px;
+    height: 30px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav-link{
+    list-style: none;
+}
+
+.header .nav-link li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+
+.header .nav-link a{
+    font-size: 700;
+    color: white;
+    text-decoration: none;
+}
+
+.header .nav-link a:hover{
+    color: #e88742;
+}
+
+#Inicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#Inicio h1{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 4rem;
+    color: #e88742;
+    text-align: center;
+    border-bottom: 10px solid rgb(4, 127, 71);
+}
+
+#Inicio img{
+    height: 25%;
+    width: 25%;
+    border-radius: 100%;
+    transition: all 0.9s;
+}
+
+#Inicio img:hover{
+    opacity: 88%;
+    border-radius: 10%;
+}
+
+#Acerca{
+    margin-top: -9rem;
+    padding-top: 10rem;
+}
+
+.container{
+    padding: 2rem;
+    margin: auto 1rem;
+    margin: auto;
+    max-width: 850px;
+}
+
+.card{
+    -webkit-box-shadow: 0px 15px 10px rgba(0,0,0,0.15);
+    box-shadow: 1px 1px 4px 2px rgba(0,0,0,0.15);
+    border-left: 15px solid rgb(2, 130, 149);
+    border-radius: 10px;
+    width: 90%;
+    background-color: rgb(251, 249, 249);
+    color: black;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+    color: #3a3a3a;
+    border-bottom: 3px solid #3a3a3a;
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 1rem;
+    line-height: 1.4rem;
+}
+
+p {
+    color: rgb(114, 113, 113);
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.btn{
+    font-size: 1.1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    background-color: #e88742;
+    padding: 0.6rem 1.5rem;
+    border-radius: 50px;
+    color: white;
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    opacity: 80%;
+}
+
+#Acerca a i img{
+    margin-right: 0.5rem;
+    margin-left: -0.2rem;
+    width: 20px;
+}
+
+#Gustos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.gustos{
+    border-color: #8e4c46;
+}
+
+
+#Gustos iframe{
+    margin: 0px 9rem;
+}
+
+#Gustos ul{
+    list-style: none;
+    color: rgb(114, 113, 113);
+    margin-bottom: 1rem;
+}
+
+#Gustos img{
+    margin-right: 0.5rem;
+    margin-left: -0.2rem;
+    width: 20px;
+}
+
+.imagenes{
+    border-color: blueviolet;
+}
+
+.images{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.images img{
+    width: 100%;
+    margin-bottom: 1rem;
+    max-width: 50%;
+    padding-right: 0.5rem;
+    border-radius: 10px;
+    transition: all 0.4s;
+}
+
+.images img:nth-child(even) {
+    padding-left: 0.5rem;
+    padding-right: 0;
+}
+
+.images img:hover{
+    opacity: 80%;
+}
+
+@media (max-width: 1080px){
+    #Gustos{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #Gustos iframe{
+        margin-top: 1.5rem;
+    }
+
+    #Inicio img{
+        height: 50%;
+        width: 50%;
+    }
+}
+
+@media (max-width: 700px){
+    .images{
+        -ms-flex-direction: column;
+        flex-direction: column;
+        align-items: center;
+    }
+    .images img{
+        max-width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .images img:nth-child(even){
+        max-width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 645){
+    #Inicio img{
+        height: 70%;
+        width: 70%;
+    }
+}
